@@ -12,9 +12,13 @@
  *
  */
 
-function loadPage(string $controllerName, string $actionName = 'index') {
+function loadPage($smarty, string $controllerName, string $actionName = 'index') {
     include_once PathPrefix . $controllerName . PathPostfix;
 
     $function = $actionName . 'Action';
-    $function();
+    $function($smarty);
+}
+
+function loadTemplate($smarty, $templateName) {
+    $smarty->display($templateName . TemplatePostfix);
 }

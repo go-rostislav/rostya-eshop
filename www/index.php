@@ -9,4 +9,4 @@ $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) : 'I
 //  определяем с какой функцией будем работать
 $actionName = $_GET['action'] ?? 'index';
 
-loadPage($controllerName, $actionName);
+loadPage($smarty, $controllerName, $actionName);
