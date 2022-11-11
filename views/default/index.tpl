@@ -1,13 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{$pageTitle}</title>
-</head>
+{include 'header.tpl'}
 <body>
-{$pageTitle}
-</body>
-</html>
+<h1 class="text-center">My shop - Интернет магазин</h1>
+<main id="main" class="main d-flex justify-content-between">
+
+
+    {*Левое меню*}
+
+    {include 'leftColumn.tpl'}
+
+    <section id="mainContent" class="mainContent">
+
+        <div>
+            center Main content
+        </div>
+
+    </section>
+
+    <aside>
+        12312
+    </aside>
+</main>
+
+

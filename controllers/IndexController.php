@@ -3,7 +3,8 @@
  * Контроллер главной страницы
  */
 
-function testAction() {
+function testAction()
+{
     echo 'IndexController.php > testAction';
 }
 
@@ -12,9 +13,12 @@ function testAction() {
  *
  * @param object $smarty шаблонизатор
  */
-function indexAction($smarty) {
+function indexAction($smarty)
+{
     $smarty->assign('pageTitle', 'Главная страница сайта');
 
+    loadTemplate($smarty, 'head');
     loadTemplate($smarty, 'index');
+    loadTemplate($smarty, 'footer');
 }
 
